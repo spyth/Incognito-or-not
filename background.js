@@ -1,30 +1,26 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
-  if(tab.incognito){
-    createNewTabInNomalMode(tab.url);
-  }
+    createNewTabInOppositeMode(tab.url, tab.incognito);
 });
 
 chrome.contextMenus.create({
-  id: "showup",
-  title: "Open Link in Normal Window",
+  id: "showupornot",
+  title: "Open Link in Incognito/Normal Window",
   contexts: ["link"]
 });
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
-  if(tab.incognito){
-    createNewTabInNomalMode(info.linkUrl);
-  }
+    createNewTabInOppositeMode(info.linkUrl, tab.incognito);
 });
 
-function createNewTabInNomalMode(url){
+function createNewTabInOppositeMode(url, incognito){
   chrome.windows.getAll({windowTypes: ["normal"]}, function(windows){
     for(var i = 0; i < windows.length; i++ ){
       var windowId = 0;
-      if(!windows[i].incognito){
+      if(windows[i].incognito != incognito){
         chrome.tabs.create({windowId: windows[i].id, url: url, active: true});
         return;
       }
     }
-    chrome.windows.create({url: url});
+    chrome.windows.create({url: url, incognito: !incognito});
   })
 }

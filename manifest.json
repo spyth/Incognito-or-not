@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "show-up",
-  "description": "Quickly change current tab or open link from incognito tab to normal tab.",
-  "version": "1.1",
+  "name": "Incognito or not",
+  "description": "Quickly switch current tab or link from incognito window to normal window, or vice versa.",
+  "version": "1.1.1",
   "browser_action": {},
   "permissions": [
     "tabs",

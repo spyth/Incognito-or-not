@@ -1,0 +1,14 @@
+{
+  "extDesc":{
+    "message": "快速切換分頁，網頁連結，文字搜尋的無痕或一般模式。"
+  },
+  "linkContextMenu": {
+    "message": "無痕/一般模式打開連結"
+  },
+  "pageContextMenu": {
+    "message": "切換網頁無痕/一般模式"
+  },
+  "textContextMenu": {
+    "message": "在無痕/一般模式搜尋/打開"
+  }
+}

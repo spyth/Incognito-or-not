@@ -1,0 +1,14 @@
+{
+  "extDesc": {
+    "message": "Quickly switch current tab or link from incognito window to normal window, or vice versa."
+  },
+  "linkContextMenu": {
+    "message": "Open Link in Incognito/Normal"
+  },
+  "pageContextMenu": {
+    "message": "Switch Page in Incognito/Normal"
+  },
+  "textContextMenu": {
+    "message": "Search/Open Text in Incognito/Normal"
+  }
+}

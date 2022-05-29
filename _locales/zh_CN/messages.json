@@ -1,0 +1,14 @@
+{
+  "extDesc":{
+    "message": "快速切换页面，链接，文字搜索的隐身或正常模式。"
+  },
+  "linkContextMenu": {
+    "message": "在隐身/正常模式打开链接"
+  },
+  "pageContextMenu": {
+    "message": "切换页面隐身/正常模式"
+  },
+  "textContextMenu": {
+    "message": "在隐身/正常模式下搜索/打开"
+  }
+}
